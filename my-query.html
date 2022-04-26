@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Queries</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo">
+					 <a href="#"><img src="images/logo.png"></a>
+				</div>
+				<div class="nav-menu">
+					<div class="toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</div>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Notifications</a></li>
+						<li><a href="#get-in-touch">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="header-right-block">
+					<div class="h-search"><input type="search" name="" placeholder="Search"><button type="button"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+					<div class="submit-btn">
+						<button type="button">Ask your query</button>
+					</div>
+					<div class="header-profile">
+						<span class="header-profile-img"><img src="images/profile-img.jpg"></span>
+						<div class="profile-dw-inner">
+							<div class="dw-img-block flex-box">
+								<img src="images/profile-img.jpg">
+								<div class="user-name">John Doe <span class="user-email"><a href="mailto:johndoe1@gmail.com">johndoe1@gmail.com</a></span></div>
+							</div>
+							<ul class="dw-list">
+								<li>Notifications 
+									<span class="switch-togle">
+									  <label class="switch">
+									    <input type="checkbox">
+									    <span class="slider round"></span>
+									  </label>
+									</span>
+								</li>
+								<li><a href="#">Language</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="query-banner-img">
+		<div class="container">
+			<div class="query-inner d-flex">
+				<div class="left-sidebar">
+					<div class="sidebar-inner">
+						<ul>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/home.svg"><img class="sidebar-icon hover-icon" src="images/hover-home.svg"> Home</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/question-mark.svg"><img class="sidebar-icon hover-icon" src="images/hover-question-mark.svg"> Queries</a>
+								<ul class="sidebar-submenu">
+									<li><a href="#">Top 10 Queries</a></li>
+									<li><a href="#">Recent Queries</a></li>
+									<li><a href="#">Most Popular Queries</a></li>
+									<li><a href="#">General</a></li>
+								</ul>
+							</li>
+							<li class="menu-items active"><a href="#"><img class="sidebar-icon" src="images/question-mark.svg"><img class="sidebar-icon hover-icon" src="images/hover-question-mark.svg"> My Queries</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/man-user.svg"><img class="sidebar-icon hover-icon" src="images/hover-man-user.svg"> My Profile</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/term-condition.svg"><img class="sidebar-icon hover-icon" src="images/hover-term-condition.svg"> Terms & Conditions</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/help.svg"><img class="sidebar-icon hover-icon" src="images/hover-help.svg"> Help</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/logout.svg"><img class="sidebar-icon hover-icon" src="images/hover-logout.svg"> Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="my-queries">
+					<div class="query-tabing">
+						<div class="tab-listing">
+							<ul class="tabbing-nav">
+								<li class="active-tab"><a href="#recent-queries">Recent Queries</a></li>
+								<li><a href="#top-queries">Top 10 Queries</a></li>
+								<li><a href="#popular-queries">Popular Queries</a></li>
+								<li><a href="#all-queries">All Queries</a></li>
+							</ul>
+						</div>
+						  <div class="tabs-content-cover">
+						    <div id="recent-queries" class="tab-content">
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/user-placeholder-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu <span class="opt-a"><span class="graph-line"></span>70%</span></li>
+						      					<li>B. Red Fort Delhi <span class="opt-b"><span class="graph-line"></span>15%</span></li>
+						      					<li>C. Ganga River <span class="opt-c"><span class="graph-line"></span>10%</span></li>
+						      					<li>D. Dwarka <span class="opt-d"><span class="graph-line"></span>05%</span></li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time">Pole End Time 30/09/2020 00:00AM</div>
+						      			<div class="query-cta-btns">
+						      				<span class="edit"><img src="images/edit.svg"></span>
+						      				<span class="delete"><img src="images/delete.svg"></span>
+						      			</div>
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time">Will be end within 2 Days</div>
+						      			<div class="query-cta-btns">
+						      				<span class="edit"><img src="images/edit.svg"></span>
+						      				<span class="delete"><img src="images/delete.svg"></span>
+						      			</div>
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Foods & Cooking, Cooking's Best Methods</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<div class="query-has-img d-flex">
+							      				<div class="query-img-block">
+							      					<img src="images/food-img.jpg">
+							      				</div>
+							      				<h2 class="small-title">Why are dhabas more famous than hotels in India?</h2>
+						      				</div>
+						      				<ul class="query-options">
+						      					<li>A. Punjab da Dhaba, Punjab.</li>
+						      					<li>B. Lassi da Dhaba, Chandigadh.</li>
+						      					<li>C. Kesri da Khana, Punjab.</li>
+						      					<li>D. Dhaba de Parathe, Chandigadh.</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      			
+						      		</div>
+						      	</div>
+						    </div>
+						    <div id="top-queries" class="tab-content">
+						     	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time">Will be end within 2 Days</div>
+						      			<div class="query-cta-btns">
+						      				<span class="edit"><img src="images/edit.svg"></span>
+						      				<span class="delete"><img src="images/delete.svg"></span>
+						      			</div>
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      			
+						      		</div>
+						      	</div>
+						     </div>
+						    <div id="popular-queries" class="tab-content">
+						     	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      			
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Foods & Cooking, Cooking's Best Methods</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<div class="query-has-img d-flex">
+							      				<div class="query-img-block">
+							      					<img src="images/food-img.jpg">
+							      				</div>
+							      				<h2 class="small-title">Why are dhabas more famous than hotels in India?</h2>
+						      				</div>
+						      				<ul class="query-options">
+						      					<li>A. Punjab da Dhaba, Punjab.</li>
+						      					<li>B. Lassi da Dhaba, Chandigadh.</li>
+						      					<li>C. Kesri da Khana, Punjab.</li>
+						      					<li>D. Dhaba de Parathe, Chandigadh.</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      			
+						      		</div>
+						      	</div>
+						    </div>
+						    <div id="all-queries" class="tab-content">
+						    	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time">Will be end within 2 Days</div>
+						      			<div class="query-cta-btns">
+						      				<span class="edit"><img src="images/edit.svg"></span>
+						      				<span class="delete"><img src="images/delete.svg"></span>
+						      			</div>
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Visiting & Travel, World History, Travel Tips</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<h2 class="small-title">Which is place better than Taj Mahal you felt worth to visit in India?</h2>
+						      				<ul class="query-options">
+						      					<li>A. Ram Setu</li>
+						      					<li>B. Red Fort Delhi</li>
+						      					<li>C. Ganga River</li>
+						      					<li>D. Dwarka</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      			
+						      		</div>
+						      	</div>
+						      	<div class="tab-content-list">
+						      		<div class="query-info-box">
+						      			<div class="query-head flex-box">
+						      				<span class="profile-img"><img src="images/profile-img.jpg"></span>
+						      				<div class="about-query-info">
+						      					<div class="small-title">John Doe</div>
+						      					<div class="query-shared-by">Foods & Cooking, Cooking's Best Methods</div>
+						      				</div>
+						      			</div>
+						      			<div class="query-desc">
+						      				<div class="query-has-img d-flex">
+							      				<div class="query-img-block">
+							      					<img src="images/food-img.jpg">
+							      				</div>
+							      				<h2 class="small-title">Why are dhabas more famous than hotels in India?</h2>
+						      				</div>
+						      				<ul class="query-options">
+						      					<li>A. Punjab da Dhaba, Punjab.</li>
+						      					<li>B. Lassi da Dhaba, Chandigadh.</li>
+						      					<li>C. Kesri da Khana, Punjab.</li>
+						      					<li>D. Dhaba de Parathe, Chandigadh.</li>
+						      				</ul>
+						      			</div>
+						      			<div class="query-footer flex-box">
+					      					<div class="vote-count">20 Votes</div>
+					      					<div class="bottom-right-options">
+					      						<span class="like"><img class="outline-icon" src="images/up-arrow-outline.svg"><img class="fill-icon" src="images/up-arrow-fill.svg"> 50</span>
+					      						<span class="dislike"><img class="outline-icon" src="images/down-arrow-outline.svg"><img class="fill-icon" src="images/down-arrow-fill.svg"> 50</span>
+					      						<span class="comments"><img src="images/speech-bubble-outline.svg"> 50</span>
+					      						<span class="viewers"><img src="images/view-outline.svg"> 50</span>
+					      						<span class="share"><img src="images/share-outline.svg"> 50</span>
+					      					</div>
+					      				</div>
+						      			<div class="poll-end-time poll-ended">Poll Ended</div>
+						      			
+						      		</div>
+						      	</div>
+						    </div>
+						  </div> <!-- END tabs-content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-inr">
+			<div class="container">
+				<div class="f-col f-col-1">
+					<img src="images/logo_white.png">
+					<span class="f-disc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+				</div>
+				<div class="f-col f-col-2">
+					<h5 class="ftr-title">Quick Links</h5>
+					<ul>
+						<li><a href="#home-banner">Home</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#how-it-works">My Quaries</a></li>
+						<li><a href="#about-us">About Us</a></li>
+						<li><a href="#get-in-touch">Contact</a></li>
+					</ul>
+				</div>
+				<div class="f-col f-col-3">
+					<h5 class="ftr-title">Contact Us</h5>
+					<div class="f-add">Lorem Ipsum is simply <br>dummy text of the printinga</div>
+					<div class="f-call"><a href="tel:+1 2345 6789">+1 2345 6789</a></div>
+					<div class="f-email"><a href="mailto:info@companyname.com">info@companyname.com</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="f-copyright">
+			<div class="container">©Copyright 2020 Vote ME</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$('.toggle') .click(function(){
+			$(this).toggleClass("show");
+		});
+
+		$('.menu-items').click(function(){
+            $('.menu-items').not($(this)).removeClass('sub-menu-show');
+            $(this).toggleClass('sub-menu-show');
+            $(this).find('.sidebar-submenu').slideToggle();
+            return false;
+        });
+
+		//-----------Tabbing-------------
+
+		$('.tabbing-nav li:first-child').addClass('active-tab');
+		$('.tab-content').hide();
+		$('.tab-content:first').show();
+
+		$('.tabbing-nav li').click(function(){
+		  $('.tabbing-nav li').removeClass('active-tab');
+		  $(this).addClass('active-tab');
+		  $('.tab-content').hide();
+		  
+		  var activeTab = $(this).find('a').attr('href');
+		  $(activeTab).fadeIn();
+		  return false;
+		});
+
+		//------------Profiel Dropdown
+		$('.header-profile-img').click(function(){
+			$('.profile-dw-inner').fadeToggle(200)
+		});
+
+		//------------Click Arrow Action
+		$('.bottom-right-options span') .click(function(){
+			$(this).toggleClass("icon-fill");
+		});
+
+	});
+
+</script>
+</html>

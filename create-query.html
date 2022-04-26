@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Query</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo">
+					 <a href="#"><img src="images/logo.png"></a>
+				</div>
+				<div class="nav-menu">
+					<div class="toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</div>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Notifications</a></li>
+						<li><a href="#get-in-touch">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="header-right-block">
+					<div class="h-search"><input type="search" name="" placeholder="Search"><button type="button"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+					<div class="submit-btn">
+						<button type="button">Ask your query</button>
+					</div>
+					<div class="header-profile">
+						<span class="header-profile-img"><img src="images/profile-img.jpg"></span>
+						<div class="profile-dw-inner">
+							<div class="dw-img-block flex-box">
+								<img src="images/profile-img.jpg">
+								<div class="user-name">John Doe <span class="user-email"><a href="mailto:johndoe1@gmail.com">johndoe1@gmail.com</a></span></div>
+							</div>
+							<ul class="dw-list">
+								<li>Notifications 
+									<span class="switch-togle">
+									  <label class="switch">
+									    <input type="checkbox">
+									    <span class="slider round"></span>
+									  </label>
+									</span>
+								</li>
+								<li><a href="#">Language</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="query-banner-img">
+		<div class="container">
+			<div class="query-inner d-flex">
+				<div class="left-sidebar">
+					<div class="sidebar-inner">
+						<ul>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/home.svg"><img class="sidebar-icon hover-icon" src="images/hover-home.svg"> Home</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/question-mark.svg"><img class="sidebar-icon hover-icon" src="images/hover-question-mark.svg"> Queries</a>
+								<ul class="sidebar-submenu">
+									<li><a href="#">Top 10 Queries</a></li>
+									<li><a href="#">Recent Queries</a></li>
+									<li><a href="#">Most Popular Queries</a></li>
+									<li><a href="#">General</a></li>
+								</ul>
+							</li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/question-mark.svg"><img class="sidebar-icon hover-icon" src="images/hover-question-mark.svg"> My Queries</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/man-user.svg"><img class="sidebar-icon hover-icon" src="images/hover-man-user.svg"> My Profile</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/term-condition.svg"><img class="sidebar-icon hover-icon" src="images/hover-term-condition.svg"> Terms & Conditions</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/help.svg"><img class="sidebar-icon hover-icon" src="images/hover-help.svg"> Help</a></li>
+							<li class="menu-items"><a href="#"><img class="sidebar-icon" src="images/logout.svg"><img class="sidebar-icon hover-icon" src="images/hover-logout.svg"> Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="right-container">
+					<div class="blue-strip"><h1 class="page-title">Query Of The Day</h1></div>
+					<div class="right-container-inner">
+						<div class="profile-info"><span class="profile-img"><img src="images/profile-img.jpg"></span> <span class="general-title">John Doe</span><span class="credential-info">Businessman .</span></div>
+						<div class="select-query-type-block">
+							<div class="upload-img-box">
+								<div class="text-area-field">
+									<textarea class="full-height" placeholder="Write your query here..."></textarea>
+									<div class="browse-img">
+										<input type="file" name="">
+										<label><img src="images/file.svg"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="select-query-type-block">
+							<div class="select-option-title">Add Options</div>
+							<div class="option-textarea">
+								<div class="option-textarea-inner">
+									<div class="text-area-field">
+										<textarea class="full-height" placeholder="Option A." maxlength="100"></textarea>
+										<div class="browse-img">
+											<input type="file" name="">
+											<label><img src="images/file.svg"></label>
+										</div>
+										<div class="detete-opt"><span class="delete">X</span></div>
+									</div>
+								</div>
+								<div class="option-textarea-inner">
+									<div class="text-area-field">
+										<textarea class="full-height" placeholder="Option B." maxlength="100"></textarea>
+										<div class="browse-img">
+											<input type="file" name="">
+											<label><img src="images/file.svg"></label>
+										</div>
+										<div class="detete-opt"><span class="delete">X</span></div>									
+									</div>
+								</div>
+							</div>
+							<div class="add-options">
+								<button type="button">
+									<span>+</span>
+									<span>Add More</span>
+								</button>
+							</div>
+						</div>
+						<div class="chart-type">
+							<div class="section-title">Representation of your results</div>
+							<div class="custom-select-box">
+								<div class="select-box-inner">
+									<input id="text" name="Select Option Type" type="radio">
+									<label for="text"><img src="images/bar-chart.jpg"><span>Bar Chart</span></label>
+								</div>
+								<div class="select-box-inner">
+									<input id="image" name="Select Option Type" type="radio">
+									<label for="image"><img src="images/pie-chart.png"><span>Pie Chart</span></label>
+								</div>
+								<div class="select-box-inner">
+									<input id="audio" name="Select Option Type" type="radio">
+									<label for="audio"><img src="images/lin-chart.jpg"><span>Line Chart</span></label>
+								</div>
+								<div class="select-box-inner">
+									<input id="video" name="Select Option Type" type="radio">
+									<label for="video"><img src="images/donut-chart.png"><span>Donut Chart</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="ask-query">
+							<div class="ask-query-inner flex-box">
+								<h2 class="section-title">Share your query with</h2>
+								<div class="query-type-radio">
+									<span class="public"><input id="public" type="radio" name="Ask Query" checked=""><label for="public"><i class="fa fa-users" aria-hidden="true"></i> Public</label></span>
+									<span class="private"><input id="private" type="radio" name="Ask Query"><label for="private"><i class="fa fa-user" aria-hidden="true"></i> Private</label></span>
+								</div>
+							</div>
+						</div>
+						<div class="query-end-time">
+							<div class="query-end-inner flex-box">
+								<h2 class="section-title">Query end time</h2>
+								<div class="select-date"><input type="date" name=""></div>
+							</div>
+						</div>
+						<div class="select-category">
+								<h2 class="section-title">What are your interests?</h2>
+								<div class="category-cover">
+				<div class="category-list" style='background-image: url("images/World of knowladge.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>World of knowladge</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Math & Science.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Math & Science</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Foods & Cooking.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Foods & Cooking</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/The marketing & Advertising2.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>The marketing & Advertising</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Business & Marketing.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Business & Marketing</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Visiting & Travel2.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Visiting & Travel</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Motivational Quotes.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Motivational Quotes</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/World History.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>World History</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/New 2020 Tech.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span> New 2020 Tech</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Smartphone Innovations.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Smartphone Innovations</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Tech Guide.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Tech Guide</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Android Apps - Latest.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Android Apps - Latest</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Technology.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Technology</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Astrogoy.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Astrogoy</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Stay Motivated.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Stay Motivated</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Mathemagics & Puzzles.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Mathemagics & Puzzles</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Craft Baker.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Craft Baker</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Worlds Popular Dishes.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>World's Popular Dishes</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Technological Trendz.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Technological Trendz</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/The $100 Startup.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>The $100 Startup</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Travel Tips.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Travel Tips</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Vacations & Holiday Trip.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Vacations & Holiday Trip</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Healthy Diet.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Healthy Diet</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Cookings Best Methods.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Cooking's Best Methods</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Innovations.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Innovations</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Arts & Craft.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Arts & Craft</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Web Series and Movies.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Web Series and Movies</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/All About India.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>All About India</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Current Affeairs & GK.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Current Affeairs & GK</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Gadgets Universe.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Gadgets Universe</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Business Ideas.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Business Ideas</span></label>
+				</div>
+				<div class="category-list" style='background-image: url("images/Fashion & Trends.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Fashion & Trends</span></label>
+				</div><div class="category-list" style='background-image: url("images/Bollywood vs Hollywood.jpg");'>
+					<input type="checkbox" name="Select Category">
+					<label><span>Bollywood vs Hollywood</span></label>
+				</div>
+			</div>
+						</div>
+						<div class="submit-btn">
+							<button type="button">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-inr">
+			<div class="container">
+				<div class="f-col f-col-1">
+					<img src="images/logo_white.png">
+					<span class="f-disc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+				</div>
+				<div class="f-col f-col-2">
+					<h5 class="ftr-title">Quick Links</h5>
+					<ul>
+						<li><a href="#home-banner">Home</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#how-it-works">My Quaries</a></li>
+						<li><a href="#about-us">About Us</a></li>
+						<li><a href="#get-in-touch">Contact</a></li>
+					</ul>
+				</div>
+				<div class="f-col f-col-3">
+					<h5 class="ftr-title">Contact Us</h5>
+					<div class="f-add">Lorem Ipsum is simply <br>dummy text of the printinga</div>
+					<div class="f-call"><a href="tel:+1 2345 6789">+1 2345 6789</a></div>
+					<div class="f-email"><a href="mailto:info@companyname.com">info@companyname.com</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="f-copyright">
+			<div class="container">©Copyright 2020 Vote ME</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	$( document ).ready(function() {
+
+		$('.toggle') .click(function(){
+			$(this).toggleClass("show");
+		});
+
+		$('.menu-items').click(function(){
+            $('.menu-items').not($(this)).removeClass('sub-menu-show');
+            $(this).toggleClass('sub-menu-show');
+            $(this).find('.sidebar-submenu').slideToggle();
+            return false;
+        });
+
+		//------------Profiel Dropdown
+		$('.header-profile-img').click(function(){
+			$('.profile-dw-inner').fadeToggle(200)
+		});
+		
+		//------------Disable Enter key in textarea
+		// $('.text-area-field textarea').bind('keypress', function(e) {
+		//   if ((e.keyCode || e.which) == 13) {
+		//     $(this).parents('form').submit();
+		//     return false;
+		//   }
+		// });
+	});
+</script>
+</html>
